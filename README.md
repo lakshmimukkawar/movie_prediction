@@ -1,5 +1,5 @@
 # movie_prediction
-command line app for movie prediction.
+command line app for movie genre prediction.
 
 ### Installation guide:
 
