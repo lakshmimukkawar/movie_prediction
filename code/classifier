@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [ "$1" = "--title" ];
+then
+    title=$2
+
+else
+    echo "please provide title command line parameter"
+fi
+
+if [ "$3" = "--description" ];
+then 
+    description=$4
+else
+    echo "please provide description command line parameter"
+fi
+
+echo -n $description
+
+if [ ${#title} -ge 1 ] && [ ${#description} -ge 1 ]; then python main.py --title $title --description $description ; exit
+fi
